@@ -1,11 +1,11 @@
 // script.js
-var form = document.getElementById('todo-form');
-var input = document.getElementById('todo-input');
-var list = document.getElementById('todo-list');
+let form = document.getElementById('todo-form');
+let input = document.getElementById('todo-input');
+let list = document.getElementById('todo-list');
 
 // Load tasks from local storage
 window.addEventListener('load', function() {
-  for (var i = 0; i < localStorage.length; i++) {
+  for (let i = 0; i < localStorage.length; i++) {
     addTaskToList(localStorage.key(i));
   }
 });
@@ -13,7 +13,7 @@ window.addEventListener('load', function() {
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  var task = input.value;
+  let task = input.value;
   input.value = '';
 
   addTaskToList(task);
@@ -21,7 +21,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function addTaskToList(task) {
-  var listItem = document.createElement('li');
+  let listItem = document.createElement('li');
   listItem.textContent = task;
   listItem.addEventListener('click', function() {
     listItem.remove();
