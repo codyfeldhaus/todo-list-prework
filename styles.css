@@ -1,4 +1,6 @@
 /* styles.css */
+
+/*'normalizing' style*/
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +13,27 @@ body {
 }
 
 h1 {
+  background-color: lightcoral;
   color: darkblue;
   text-align: center;
+}
+
+/*id selectors target individual elements,
+but class selectors can be used to apply the same
+set of rules to multiple elements*/
+
+.special-text {
+  font-family: 'Times New Roman', Times, serif;
+  color: darkgreen;
+  font-weight: bolder;
 }
 
 #container {
   width: 90%;
   margin: auto;
-  overflow: hidden; /* Clearfix for the floats */
-}
+  overflow: hidden; /*Clearfix for the floats*/
+}  
+
 
 #task-creator, #task-list {
   width: 45%;
@@ -46,6 +60,8 @@ h1 {
 }
 
 #todo-list li {
+  /*selects all li elements that are descendants of
+  the element with an id of todo-list*/
   background-color: #f2f2f2;
   padding: 10px;
   margin-bottom: 5px;
