@@ -46,6 +46,7 @@ function addTaskToList(task) {
 
   //create a blank li element that will be used to add our task to the ul list
   let listItem = document.createElement('li');
+  //let newElement = document.createElement("h1")
 
   //set the text of that element
   listItem.textContent = task;
