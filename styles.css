@@ -22,11 +22,11 @@ h1 {
 but class selectors can be used to apply the same
 set of rules to multiple elements*/
 
-.special-text {
+/* .special-text {
   font-family: 'Times New Roman', Times, serif;
   color: darkgreen;
   font-weight: bolder;
-}
+} */
 
 #container {
   width: 90%;
